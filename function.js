@@ -15,14 +15,21 @@
 //     return result;
 // }
 
-let a;
-let b;
-let sum;
+// let a;
+// let b;
+// let sum;
 
-a=window.prompt("enter the value of a");
-b=window.prompt("enter the value of b");
-sum=getSum(a,b);
-console.log("sum of",a, "and",b, "is:",sum);
-function getSum(a,b){
-    return a+b;
+// a=window.prompt("enter the value of a");
+// b=window.prompt("enter the value of b");
+// sum=getSum(a,b);
+// console.log("sum of",a, "and",b, "is:",sum);
+// function getSum(a,b){
+//     return a+b;
+// }
+
+// ternary operator:
+Checkwinner(true);
+
+function Checkwinner(win){
+    win? console.log("you win"):console.log("YOU LOSE")
 }
