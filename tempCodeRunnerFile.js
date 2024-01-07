@@ -1,5 +1,7 @@
-let numbers=[1,2,3,4,5];
-// let maximum=Math.max(...numbers);
-// let minimum=Math.min(...numbers);
-// console.log(minimum);
-// console.log(maximum);
+function sum(...numbers){
+//     let result=0;
+//     for(let number of numbers){
+//         result+=number;
+//     }
+//     return result;
+// }
