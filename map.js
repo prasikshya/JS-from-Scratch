@@ -12,11 +12,20 @@
 //     return Math.pow(element,3);
 // }
 
-const students=["motu","patlu","tom","jerry"];
-const studentsUpper=students.map(uppercase);
+// const students=["motu","patlu","tom","jerry"];
+// const studentsUpper=students.map(uppercase);
 
-console.log(studentsUpper);
+// console.log(studentsUpper);
 
-function uppercase(element){
-    return element.toUpperCase();
+// function uppercase(element){
+//     return element.toUpperCase();
+// }
+
+
+const dates=["2024-1-15","2024-2-14"];
+const formattedDates=dates.map(formatDates);
+console.log(formattedDates);
+function formatDates(element){
+    const parts=element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`
 }
