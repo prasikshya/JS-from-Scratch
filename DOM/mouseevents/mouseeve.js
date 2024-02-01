@@ -28,6 +28,44 @@ myButton.addEventListener("mouseout",event=>{
     myBox.style.backgroundColor="pink";
     myBox.textContent="CLICK ME💗";
 })
+//...key EVENTS.....//
+const ourBox=document.getElementById("ourBox");
+const moveAmount=10;
+let x=0;
+let y=0;
+
+document.addEventListener("keydown",event=>{
+if(event.key.startsWith("Arrow")){
+    event.preventDefault();
+    switch(event.key){
+        case "ArrowUp":
+            y-=moveAmount;
+            break;
+            case "ArrowDown":
+            y+=moveAmount;
+            break;
+            case "ArrowLeft":
+            x-=moveAmount;
+            break;
+            case "ArrowRight":
+            x+=moveAmount;
+            break;
+    }
+    ourBox.style.top=`${y}px`;
+    ourBox.style.left=`${x}px`;
+}
+
+})
+document.addEventListener("keydown",event=>{
+    ourBox.textContent="😭";
+    ourBox.style.backgroundColor="tomato";
+});
+
+
+document.addEventListener("keyup",event=>{
+    ourBox.textContent="😆";
+    ourBox.style.backgroundColor="lightskyblue";
+});
 
 
 
