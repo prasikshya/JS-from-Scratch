@@ -1,0 +1,22 @@
+[
+    {
+        "name": "prasikshya",
+        "age": 100,
+        "isEmployed": true
+    },
+    {
+        "name": "Bill Gates",
+        "age": 65,
+        "isEmployed": true
+    },
+    {
+        "name": "Steve Jobs",
+        "age": 70,
+        "isEmployed": false
+    },
+    {
+        "name": "Elon Musk",
+        "age": 40,
+        "isEmployed": false
+    }
+]
