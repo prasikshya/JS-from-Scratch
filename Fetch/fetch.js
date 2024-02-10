@@ -9,11 +9,12 @@
 // })//promise based
 // .then(data=>console.log(data.id))
 // .catch(error=>console.error(error));
+
 async function  fetchData(){
     try{
         const pokemonName=document.getElementById("pokemonName").value.toLowerCase();
 
-        const response=await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+        const response=await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);//api fetched
         if(!response.ok){
             throw new Error("couldnot fetch resource");
 
@@ -24,6 +25,7 @@ async function  fetchData(){
         const imgElement=document.getElementById("pokemonSprite");
         imgElement.src=pokemonSprite;
         imgElement.style.display="block";
+    
 
     }
 
